@@ -72,7 +72,7 @@ public class OTAServerConfig {
 
 			String version = SystemProperties.get("ro.build.version.release");
 			String platform = SystemProperties.get("ro.board.platform");
-			ota_folder = new String(product + "_" + android_name + "_" + version + "/");
+			ota_folder = "builds/full/";
 			fileaddr = new String(ota_folder + product + "-ota-" + version_incremental + ".zip");
 			buildconfigAddr = new String(ota_folder + "build.prop");
 			diffbuildconfigAddr = new String(ota_folder + "build_diff.prop");
